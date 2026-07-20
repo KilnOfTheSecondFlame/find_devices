@@ -57,7 +57,7 @@ if(NOT json_POPULATED)
   add_subdirectory(${json_SOURCE_DIR} ${json_BINARY_DIR} EXCLUDE_FROM_ALL)
 endif()
 
-FetchContent_Declare(fmt GIT_REPOSITORY https://github.com/fmtlib/fmt.git GIT_TAG master)
+FetchContent_Declare(fmt GIT_REPOSITORY https://github.com/fmtlib/fmt.git GIT_TAG main)
 FetchContent_GetProperties(fmt)
 if(NOT fmt_POPULATED)
   FetchContent_Populate(fmt)
